@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>xingfanxia · field notes</title>
+<meta name="description" content="自托管的技术 field notes 与演示 deck。">
+<style>
+  :root{
+    --bg:#0a0a0b; --fg:#f4f4f5; --muted:#8a8a92; --line:#26262b;
+    --ikb:#002FA7; --ikb-bright:#1d4ed8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--fg)}
+  body{
+    font-family:"Helvetica Neue",Inter,"Microsoft YaHei UI","Noto Sans SC",sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.5;
+    min-height:100dvh; display:flex; flex-direction:column;
+    padding:clamp(28px,6vw,88px);
+  }
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,monospace;letter-spacing:.08em;text-transform:uppercase}
+  header{margin-bottom:auto}
+  .kick{font-size:12px;color:var(--muted)}
+  h1{font-weight:200;font-size:clamp(40px,9vw,128px);line-height:.98;letter-spacing:-.01em;margin:.18em 0 .35em}
+  h1 b{font-weight:200;color:var(--ikb-bright);font-style:italic}
+  .sub{color:var(--muted);max-width:46ch;font-size:clamp(14px,1.4vw,17px)}
+  main{margin:clamp(40px,8vh,96px) 0}
+  .list-label{font-size:11px;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:8px;display:flex;justify-content:space-between}
+  a.item{
+    display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:16px;
+    text-decoration:none;color:var(--fg);border-bottom:1px solid var(--line);
+    padding:22px 0;transition:padding-left .18s ease,color .18s ease;
+  }
+  a.item:hover{padding-left:14px;color:var(--ikb-bright)}
+  a.item .t{font-size:clamp(18px,2.4vw,26px);font-weight:300}
+  a.item .d{display:block;color:var(--muted);font-size:13px;font-weight:400;margin-top:6px}
+  a.item:hover .d{color:var(--muted)}
+  a.item .meta{font-size:11px;color:var(--muted);white-space:nowrap}
+  footer{margin-top:auto;padding-top:40px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+  footer a:hover{color:var(--fg)}
+</style>
+</head>
+<body>
+  <header>
+    <div class="kick mono">XINGFANXIA · FIELD NOTES</div>
+    <h1>自托管的<br><b>技术笔记</b>与 deck</h1>
+    <p class="sub">把折腾过的东西做成能翻、能分享的东西。横向翻页:← → 翻页 · ESC 索引。</p>
+  </header>
+
+  <main>
+    <div class="list-label mono"><span>Decks</span><span>2026</span></div>
+    <a class="item" href="./proxy-node-setup/">
+      <span class="t">搭一套自己的翻墙服务
+        <span class="d">sing-box 多协议 + Reality 伪装,端到端搭建 runbook · 瑞士风网页 deck · 9 页</span>
+      </span>
+      <span class="meta mono">PROXY-NODE-SETUP&nbsp;→</span>
+    </a>
+  </main>
+
+  <footer>
+    <span class="mono">© 2026 XINGFANXIA</span>
+    <span><a href="https://github.com/xingfanxia">github.com/xingfanxia</a> · <a href="https://blog.ax0x.ai">blog.ax0x.ai</a></span>
+  </footer>
+</body>
+</html>
