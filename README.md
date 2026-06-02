@@ -8,7 +8,11 @@ Single-file static HTML, served via GitHub Pages (`.nojekyll`, no build step).
 
 | Path | What |
 |---|---|
-| `/` | Landing / index |
-| `/proxy-node-setup/` | 搭一套自己的翻墙服务 — sing-box multi-protocol proxy setup runbook, Swiss-style horizontal-swipe deck (companion to the [`proxy-node-setup`](https://github.com/xingfanxia/claude-config) Claude Code skill + [blog runbook](https://blog.ax0x.ai/proxy-runbook-zh)) |
+| `/` | Landing / index — links out to the skill decks |
+
+Skill showcase decks live in the **AX-skills** repo (served at
+[`/AX-skills/`](https://xingfanxia.github.io/AX-skills/)), e.g.
+[`/AX-skills/proxy-node-setup/`](https://xingfanxia.github.io/AX-skills/proxy-node-setup/)
+— 搭一套自己的翻墙服务 (companion to the [blog runbook](https://blog.ax0x.ai/proxy-runbook-zh)).
 
 Decks: `←` `→` to navigate, `B` for static (low-power) mode, `ESC` for the slide index.
